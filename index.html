@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Alex</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#about" >About Me</a>
+            <a href="#skills" >Skills</a>
+            <a href="#education" >Education</a>
+            <a href="#experience" >Experience</a>
+            <a href="#cyse" >CYSE 201S</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Alex</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I’m Alex, a Cybersecurity major at Old Dominion University with hands-on experience as an IT Support Technician through my internship. 
+I’ve worked with system imaging, troubleshooting, and security tools while also building skills in Linux, Windows, and networking. 
+I’m passionate about solving problems, learning new technologies, and applying cybersecurity concepts to real-world challenges. 
+My goal is to grow into a security analyst role and continue building both technical and creative projects along the way.</p>
+            <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+
+            <a href="#" class="btn">Resume</a>
+        </div>
+    </section>
+    <script>
+    let lastScroll = 0;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+        let currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll) {
+            // scrolling down -> hide header
+            header.style.top = "-100px"; 
+        } else {
+            // scrolling up -> show header
+            header.style.top = "0";
+        }
+
+        lastScroll = currentScroll;
+    });
+</script>
+
+</body>
+</html>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I was born and raised in Norfolk, Virginia, where my passion for technology started at a young age. 
+        While playing games online, I ran into modders, and that experience sparked my interest in cybersecurity. 
+        At 13, I attended the GenCyber summer camp at Old Dominion University — the youngest participant there — 
+        and it further fueled my curiosity about computers and security.
+    </p>
+    <p>
+        Growing up, I loved experimenting with computers, breaking things apart and learning how to fix them. 
+        I started building and selling gaming PCs, which gave me both hands-on technical experience and an 
+        entrepreneurial mindset. Outside of tech, I stayed active by playing varsity baseball and diving at 
+        Maury High School.
+    </p>
+    <p>
+        Today, I’m pursuing a Cybersecurity degree at Old Dominion University while working in IT on campus. 
+        I’ve gained practical experience fixing a wide range of problems on Windows machines — internal and external. 
+        I’ve seen more blue screens than I can count and replaced even more CMOS batteries, but those challenges 
+        taught me how to troubleshoot under pressure and find creative solutions.
+    </p>
+    <p>
+        I love the challenge of solving problems, learning new technologies, and building a career that blends my 
+        passion for technology with real-world impact.
+    </p>
+    <div class="about-photo">
+    <img src="computer.jpg" alt="My computer">
+    <p class="caption">My Battlestation</p>
+</div>
+
+</section>
+<section id="skills">
+    <h2>Skills</h2>
+    <p>
+        Over the years, I’ve built a strong foundation in both IT support and cybersecurity. 
+        My skills come from hands-on troubleshooting, academic coursework, and real-world 
+        projects at Old Dominion University.
+    </p>
+
+    <div class="skills-container">
+        <div class="skill-box">
+            <h3>IT Support</h3>
+            <ul>
+                <li>Windows troubleshooting & repair</li>
+                <li>Manage Tickets for Staff and Students</li>
+                <li>System imaging & deployment</li>
+                <li>Hardware setup & maintenance</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Cybersecurity</h3>
+            <ul>
+                <li>Linux & Unix system administration</li>
+                <li>Networking fundamentals (TCP/IP, DNS, HTTP)</li>
+                <li>Basic security operations & monitoring</li>
+                <li>Risk assessment & troubleshooting</li>
+                <li>Pentesting</li>
+
+
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Development & Tools</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript (beginner projects)</li>
+                <li>Pfsense</li>
+                <li>Microsoft Intune</li>
+                <li>ServiceNow ticketing</li>
+                <li>Microsoft Office & productivity tools</li>
+                <li>Virtualization (VMware, VirtualBox)</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    <div class="extra-skills">
+    <h3>Also fluent in</h3>
+    <div class="tool-logos">
+        <img src="images/skills/kali.png" alt="Kali Linux">
+        <img src="images/skills/burpsuite.png" alt="Burp Suite">
+        <img src="images/skills/metasploit.png" alt="Metasploit">
+        <img src="images/skills/nmap.png" alt="Nmap">
+        <img src="images/skills/sqlmap.png" alt="SQLmap">
+  
+        
+    </div>
+</div>
+
+<section id="education">
+  <h2>Education   </h2></p>
+</div>
+  <div class="edu-timeline">
+    <!-- TCC -->
+    <article class="edu-item">
+      <div class="dot"></div>
+      <div class="edu-content">
+        <img src="images/tcc-logo.png" alt="Tidewater Community College" class="edu-logo">
+        <h3>Tidewater Community College</h3>
+        <span class="edu-meta">Associate of Applied Science — Cybersecurity</span>
+        <p>Dean’s List; focused on core cybersecurity principles, networking, and hands-on labs.</p>
+      </div>
+    </article>
+
+    <!-- ODU -->
+    <article class="edu-item">
+      <div class="dot"></div>
+      <div class="edu-content">
+        <img src="images/odu-logo.png" alt="Old Dominion University" class="edu-logo">
+        <h3>Old Dominion University</h3>
+        <span class="edu-meta">Senior — B.S. in Cybersecurity (4.0 GPA)</span>
+        <p>Real-world experience as an IT Support Technician; focus on security operations, risk management, and system defense.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
+
+<section id="experience">
+    <h2>Experience</h2>
+    <p>
+        My work experience has given me the opportunity to apply my technical knowledge 
+        in real-world environments, troubleshoot complex issues, and support a wide range 
+        of users at Old Dominion University — while also building strong communication and 
+        customer service skills through years in the restaurant industry.
+    </p>
+
+    <div class="experience-container">
+        <div class="experience-box">
+            <h3>Old Dominion University</h3>
+            <span class="exp-date">IT Support Technician – Present</span>
+            <p>
+                • Provide technical support for faculty, staff, and students across multiple buildings. <br>
+                • Image, configure, and deploy Windows machines in academic labs. <br>
+                • Troubleshoot blue screens, hardware failures, and network issues. <br>
+                • Replace CMOS batteries, upgrade components, and maintain system reliability. <br>
+                • Work with ServiceNow to track and resolve IT support tickets. <br>
+            </p>
+        </div>
+
+        <div class="experience-box">
+            <h3>Freelance</h3>
+            <span class="exp-date">2018 – Present</span>
+            <p>
+                • Built and sold custom gaming PCs for clients, from component selection to assembly. <br>
+                • Gained hands-on experience diagnosing and fixing hardware/software issues. <br>
+                • Developed customer service skills through one-on-one client support. <br>
+            </p>
+        </div>
+
+        <div class="experience-box">
+            <h3>Restaurant Server</h3>
+            <span class="exp-date">2018 – Present</span>
+            <p>
+                • Over 6 years of experience providing excellent service in a fast-paced restaurant environment. <br>
+                • Strengthened communication, teamwork, and multitasking skills. <br>
+                • Learned to stay calm under pressure and manage multiple responsibilities efficiently. <br>
+                • Built strong interpersonal skills that carry over into IT support and client-facing roles. <br>
+            </p>
+        </div>
+    </div>
+</section>
+<section id="cyse">
+    <h2>CYSE 201S</h2>
+    <p>
+        <!-- Content coming soon -->
+    </p>
+</section>
+
+
+
+
